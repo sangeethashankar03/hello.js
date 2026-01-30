@@ -10,8 +10,9 @@ function sumMultiplesInM(f,m){
   }
   return sum;
 }
-let f=[3,5]
-let m=[1,2,3,4,5,6,7,8,9]
+function findSum(){
+let f=document.getElementById("fArray").value.split(",");
+let m=document.getElementById("mArray").value.split(",");
 let result= sumMultiplesInM(f,m);
-console.log(result);
-alert(result);
+document.getElementById("output").innerHTML=result;
+}
